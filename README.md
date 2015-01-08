@@ -1,5 +1,5 @@
 ********************************
-** AfriCallShop FOR ANDROID **
+** AfriCallShop FOR Androïd **
 
 ** AfriCallShop app is based on Linphone source code **
 ********************************
