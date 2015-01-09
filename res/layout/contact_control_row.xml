@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:layout_margin="2dp"
+	android:gravity="center_vertical"
+	android:background="@android:color/white"
+	android:paddingLeft="10dp"
+	android:paddingRight="10dp"
+	android:paddingTop="3dp"
+	android:paddingBottom="3dp">
+   
+   	<TextView 
+   	    android:id="@+id/numeroOrAddress"
+	    android:lines="1"
+ 		android:layout_width="0dp"
+ 		android:layout_height="wrap_content"
+ 		android:layout_weight="1"
+	    android:ellipsize="marquee"
+    	android:marqueeRepeatLimit="marquee_forever"
+    	android:scrollHorizontally="true"
+    	android:fadingEdge="horizontal"
+        android:singleLine="true"
+		android:textColor="@color/text_contrast"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:gravity="left" />
+   	
+   <!-- <TextView 
+	   	android:id="@+id/pricecontact"
+	    android:lines="1"
+ 		android:layout_width="0dp"
+ 		android:layout_height="wrap_content"
+ 		android:layout_weight="0.4"
+ 		android:singleLine="true"
+		android:textColor="@color/text_contrast"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:gravity="left"
+        android:ellipsize="end"    
+   	    />  -->
+   	    
+   	    
+    	<LinearLayout
+   	    android:layout_width="0dp"
+   	    android:layout_height="wrap_content"
+   	    android:layout_weight="0.7"
+   	    android:orientation="vertical"
+   	    android:paddingLeft="5dp"
+	   	android:paddingRight="5dp"
+   	    >
+   	      	<LinearLayout
+   	      	    android:layout_width="match_parent"
+		   	    android:layout_height="match_parent"
+		   	    android:orientation="horizontal"
+		   	    android:weightSum="1"
+   	      	    >
+   	      	   
+   	      	   <ImageView
+			   	    android:id="@+id/dial"
+			   	    android:layout_width="0dp"
+			   	    android:layout_height="match_parent"
+			   	    android:layout_weight="0.5"
+			   	    android:contentDescription="@string/content_description_dial_back"
+			   	    android:gravity="center"
+			   	    android:scaleType="fitCenter"
+			   	    android:src="@drawable/call_answer_default_custom"/>
+   	      	   
+   	      	   <ImageView
+			   	    android:id="@+id/start_chat"
+			   	    android:layout_width="0dp"
+			   	    android:layout_height="match_parent"
+			   	    android:layout_weight="0.5"
+			   	    android:contentDescription="@string/content_description_chat"
+			   	    android:gravity="center"
+			   	    android:scaleType="fitCenter"
+			   	    android:src="@drawable/chat_icon_over_custom" />   	      	    
+   	      	</LinearLayout>
+   	      	
+	   	    <LinearLayout
+   	      	    android:layout_width="match_parent"
+		   	    android:layout_height="match_parent"
+		   	    android:orientation="horizontal"
+		   	    android:weightSum="1"
+   	      	    >
+   	      	   
+   	      	   <TextView 
+			   	    android:id="@+id/price_call"
+			   	    android:layout_width="0dp"
+			   	    android:layout_height="match_parent"
+			   	    android:layout_weight="0.5"
+					android:textColor="@color/text_contrast"
+			        android:textAppearance="?android:attr/textAppearanceSmall"
+			        android:gravity="center"
+			        android:ellipsize="end"/>
+   	      	   
+   	      	   	<TextView 
+			   	    android:id="@+id/price_tchat"
+			   	    android:layout_width="0dp"
+			   	    android:layout_height="match_parent"
+			   	    android:layout_weight="0.5"
+					android:textColor="@color/text_contrast"
+			        android:textAppearance="?android:attr/textAppearanceSmall"
+			        android:gravity="center"
+			        android:ellipsize="end"/>
+   	      	   	
+   	      	</LinearLayout>
+   	      	
+
+		   	
+
+	   	
+   	</LinearLayout>	   	
+   	
+  <!--   	<LinearLayout
+   	    android:layout_width="0dp"
+   	    android:layout_height="wrap_content"
+   	    android:layout_weight="0.4"
+   	    android:orientation="vertical"
+   	    android:paddingLeft="5dp"
+	   	android:paddingRight="5dp"
+   	    >
+   	    
+	   	<ImageView
+	   	    android:id="@+id/start_chat"
+	   	    android:layout_width="match_parent"
+	   	    android:layout_height="match_parent"
+	   	    android:contentDescription="@string/content_description_chat"
+	   	    android:gravity="center"
+	   	    android:scaleType="fitCenter"
+	   	    android:src="@drawable/chat_icon_over" />
+	   	
+	   	<TextView 
+	   	    android:id="@+id/price_tchat"
+	   	    android:layout_width="match_parent"
+	   	    android:layout_height="match_parent"
+			android:textColor="@color/text_contrast"
+	        android:textAppearance="?android:attr/textAppearanceSmall"
+	        android:gravity="center"
+	        android:text="0003€"
+	        android:ellipsize="end"/>
+	   	
+   	</LinearLayout>
+   	
+   	-->
+   	
+   	<ImageView
+   	    android:id="@+id/addFriend"
+   	    android:visibility="gone"
+   	    android:layout_width="0dp"
+   	    android:layout_height="match_parent"
+   	    android:layout_weight="1"
+   	    android:contentDescription="@string/content_description_dial_back"
+   	    android:gravity="right"
+   	    android:paddingLeft="5dp"
+   	    android:paddingRight="5dp"
+   	    android:scaleType="fitCenter"
+   	    android:src="@drawable/friend_add" />
+  
+  </TableRow>

@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:linphone="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  	android:background="@drawable/background"
+    android:orientation="vertical" >
+        <LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:background="@drawable/toolsbar_background"
+	    >
+	    
+        <TextView 
+		    android:id="@+id/backbtn"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:layout_weight="1"
+		    android:visibility="gone"
+            android:gravity="center"
+            android:text="@string/back_label"
+            android:textColor="@drawable/text_button"
+		    android:background="@drawable/chat_back"
+		    android:paddingTop="20dp"
+            android:scaleType="centerCrop"
+		    />
+        		
+        <TextView 
+            android:background="@drawable/contact_edit"
+            android:text="@string/button_edit"
+            android:gravity="center"
+            android:paddingTop="20dp" 
+            android:textColor="@drawable/text_button"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:scaleType="centerCrop"
+		    android:layout_weight="1"
+		    android:visibility="invisible"
+		    android:adjustViewBounds="true"/>
+        
+        <TextView 
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:text="@string/cancel"
+		    android:layout_weight="1"
+		    android:visibility="invisible"		    
+		    />
+        
+    </LinearLayout>
+    
+        
+    <LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:paddingTop="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+	    android:gravity="center"
+	    android:orientation="horizontal">
+        
+        <org.linphone.ui.AvatarWithShadow
+		    android:id="@+id/contactPicture"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    linphone:picture="@drawable/unknown_small" />
+	        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp">
+            
+	        <TextView
+	            android:id="@+id/contactName"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textAppearance="?android:attr/textAppearanceLarge"
+		    	android:textColor="@color/text_contrast" />
+	        
+	        <TextView
+	            android:id="@+id/contactAddress"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textAppearance="?android:attr/textAppearanceSmall"
+		    	android:textColor="@color/text_contrast" />
+        
+        </LinearLayout>
+        
+    </LinearLayout>
+    
+    <LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/logRow"
+	    android:paddingTop="20dp"
+	    android:orientation="vertical">
+        <!--  
+        <TextView
+            android:id="@+id/callDirection"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+	    	android:textColor="@color/text_contrast" /> -->
+	   <ListView
+		android:id="@+id/historyDetailList"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:divider="@color/gray_color"
+		android:stackFromBottom="false"
+		android:cacheColorHint="@color/transparent"
+		android:visibility="gone"
+		android:dividerHeight="1dp"/>		
+	    	
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation = "horizontal"
+            android:weightSum="5"  
+            >
+            <TextView
+	            android:id="@+id/date_label"
+	            android:paddingRight="10dp"
+	            android:paddingLeft="10dp"
+	            android:layout_width="0dp"
+	            android:layout_weight="2"
+	            android:layout_height="wrap_content"
+	            android:textStyle="bold"
+	            android:text="@string/date_label"
+		    	android:textColor="@color/text_contrast" />
+            <TextView
+	            android:id="@+id/date"
+				android:layout_width="0dp"
+	            android:layout_weight="3"
+	            android:layout_height="wrap_content"
+	            android:gravity="left"
+	            android:paddingLeft="10dp"
+	            android:paddingRight="10dp"
+	            android:textColor="@color/text_contrast" />
+        </LinearLayout>
+        
+
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation = "horizontal"
+            android:weightSum="5"  
+            >
+	        <TextView
+	            android:id="@+id/time_label"
+	            android:paddingRight="10dp"
+	            android:paddingLeft="10dp"
+	            android:layout_width="0dp"
+	            android:layout_weight="2"
+	            android:layout_height="wrap_content"
+	            android:text="@string/time_label"
+	            android:textStyle="bold"
+		    	android:textColor="@color/text_contrast" />
+            <TextView
+	            android:id="@+id/time"
+	            android:layout_width="0dp"
+	            android:layout_weight="3"
+	            android:layout_height="wrap_content"
+	            android:gravity="left"
+	            android:paddingLeft="10dp"
+	            android:paddingRight="10dp"
+	            android:textColor="@color/text_contrast" />
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation = "horizontal"
+            android:weightSum="5"  
+            >
+	        <TextView
+	            android:id="@+id/cost_label"
+	            android:paddingRight="10dp"
+	            android:paddingLeft="10dp"
+	            android:textStyle="bold"
+	            android:layout_width="0dp"
+	            android:layout_weight="2"
+	            android:layout_height="wrap_content"
+	            android:text="@string/cost_label"
+		    	android:textColor="@color/text_contrast" />
+            <TextView
+	            android:id="@+id/cost"
+	            android:layout_width="0dp"
+	            android:layout_weight="3"
+	            android:layout_height="wrap_content"
+	            android:gravity="left"
+	            android:paddingLeft="10dp"
+	            android:paddingRight="10dp"
+	            android:textColor="@color/text_contrast" />
+        </LinearLayout>
+         <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation = "horizontal"
+            android:weightSum="5"  
+            >       
+	        <TextView
+	            android:id="@+id/country_label"
+	            android:paddingRight="10dp"
+	            android:paddingLeft="10dp"
+	            android:textStyle="bold"
+	            android:layout_width="0dp"
+	            android:layout_weight="2"
+	            android:layout_height="wrap_content"
+	            android:text="@string/country_label"
+		    	android:textColor="@color/text_contrast" />
+         	<TextView
+	            android:id="@+id/country"
+	            android:layout_width="0dp"
+	            android:layout_weight="3"
+	            android:layout_height="wrap_content"
+	            android:gravity="left"
+	            android:paddingLeft="10dp"
+	            android:paddingRight="10dp"
+	            android:textColor="@color/text_contrast" />
+        </LinearLayout>        
+
+        
+    </LinearLayout>
+    
+    <RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:paddingTop="20dp">
+        
+        <RelativeLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:id="@+id/callBackRow"
+		    android:background="@color/blue_color">
+            
+	        <Button
+	            android:id="@+id/dialBack"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:text="@string/detail_call"
+			    android:textStyle="bold"
+			    android:background="@color/blue_color"
+		    	android:textColor="@android:color/white"
+		    	android:layout_centerInParent="true" />
+        
+        </RelativeLayout>
+        
+        <RelativeLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:id="@+id/chatRow"
+		    android:layout_below="@id/callBackRow"
+	    	android:layout_marginTop="20dp">
+            	        
+	        <Button 
+	            android:id="@+id/chat"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:text="@string/detail_chat"
+			    android:background="@color/green_color"
+		    	android:textColor="@android:color/white"
+		    	android:textStyle="bold"
+		    	android:layout_centerInParent="true" />
+        
+        </RelativeLayout>
+        
+        <RelativeLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:id="@+id/addContactRow"
+		    android:layout_below="@id/chatRow"
+	    	android:layout_marginTop="20dp"
+	    	android:visibility="gone"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+            
+	        <ImageView
+	            android:contentDescription="@string/content_description_add_contact"
+	            android:id="@+id/addToContacts"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:adjustViewBounds="true"
+	            android:src="@drawable/button"
+		    	android:layout_centerInParent="true" />
+	        
+	        <TextView 
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="@string/add_to_contacts"
+		    	android:textColor="@android:color/black"
+		    	android:layout_centerInParent="true" />
+        
+        </RelativeLayout>
+        
+    </RelativeLayout>
+
+</LinearLayout>

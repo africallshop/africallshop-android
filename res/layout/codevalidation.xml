@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+  	android:background="@drawable/background"
+	android:layout_height="match_parent">
+     
+    <LinearLayout
+		android:id="@+id/mark"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:orientation="horizontal">
+	    
+		<ImageView 
+		    android:contentDescription="@string/content_description_mark"
+			android:visibility="invisible"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:src="@drawable/setup_mark"
+			android:adjustViewBounds="true"
+			android:scaleType="fitXY"
+			android:layout_weight="0.5"/>
+		          
+		<ImageView 
+		    android:contentDescription="@string/content_description_mark"
+			android:visibility="invisible"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:src="@drawable/setup_mark"
+			android:adjustViewBounds="true"
+			android:scaleType="fitXY"
+			android:layout_weight="0.5"/>
+	  
+	</LinearLayout>
+	
+	<LinearLayout
+	    android:id="@+id/fragmentContainer"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_above="@id/mark"
+	    android:gravity="center_horizontal|center_vertical"
+	    android:orientation="vertical"
+	    android:padding="20dp" >
+
+		<LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:background="#fff"
+		    android:gravity="center_horizontal|center_vertical"
+		    android:orientation="vertical"
+		    android:paddingBottom="10dp"
+		    android:paddingLeft="20dp"
+		    android:paddingRight="20dp"
+		    android:paddingTop="10dp" >
+
+			    <ImageView
+			        android:id="@+id/imageView2"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="0dp"
+			        android:src="@drawable/ic_launcher"
+			        android:contentDescription="@string/todo"/>
+
+			    <TextView
+			        android:id="@+id/textView1"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_gravity="center_horizontal|center_vertical"
+			        android:gravity="center_horizontal"
+			        android:text="@string/code_validation_text1"
+			        android:textColor="@color/blue_color" />
+
+			    <EditText
+			        android:id="@+id/sms_code"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="10dp"
+			        android:background="@color/gray_edit"
+			        android:ems="10"
+			        android:hint="@string/code_validation_text2"
+			        android:inputType="textPersonName|textEmailAddress"
+			        android:paddingBottom="10dp"
+			        android:paddingLeft="5dp"
+			        android:paddingRight="5dp"
+			        android:paddingTop="10dp"
+			        android:textAppearance="?android:attr/textAppearanceSmallInverse"
+			        android:textColor="#000000"
+			        android:textColorHint="@color/gray_color" >
+
+			        <requestFocus />
+			    </EditText>
+
+			    <Button
+			        android:id="@+id/validate_button"
+			        style="?android:attr/buttonStyleSmall"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_marginTop="5dp"
+			        android:background="@color/blue_color"
+			        android:text="@string/sms_validation_text3"
+			        android:textColor="@color/text_switch_selected"
+			        android:textAppearance="?android:attr/textAppearanceLarge"
+			        android:textStyle="bold" />
+
+			    <TextView
+			        android:id="@+id/term_usage"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_gravity="center_horizontal|center_vertical"
+			        android:layout_marginTop="5dp"
+			        android:gravity="center_horizontal"
+			        android:text="@string/code_validation_text3"
+			        android:textAppearance="?android:attr/textAppearanceSmallInverse"
+			        android:textColor="@color/blue_color" />
+
+		</LinearLayout>
+
+	</LinearLayout>
+	  
+	<LinearLayout
+		android:id="@+id/menu"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:orientation="horizontal">
+	    
+		<include layout="@layout/setup_empty_button" />
+		          
+		<include layout="@layout/setup_next_button" />
+		
+		<include layout="@layout/setup_back_button" />    
+	  
+	</LinearLayout>
+ 
+</RelativeLayout>

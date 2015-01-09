@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@drawable/background"
+	android:orientation="vertical" >
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:background="@drawable/toolsbar_background">
+
+		<TextView
+			android:visibility="invisible"
+			android:paddingTop="20dp"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:scaleType="centerCrop"
+			android:adjustViewBounds="true"
+			android:layout_weight="1"/>
+
+		<TextView
+			android:contentDescription="@string/content_description_linphone_contacts"
+			android:id="@+id/Options"
+			android:text="@string/option_label"
+			android:gravity="center"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:textColor="@drawable/text_switch_button_color"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:scaleType="centerCrop"
+			android:adjustViewBounds="true"
+			android:layout_weight="1"/>
+
+		<TextView
+			android:contentDescription="@string/connection_label"
+			android:id="@+id/disconnect"
+			android:text="@string/connection_label"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:gravity="center"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:textColor="@color/blue_color"
+			android:layout_weight="1"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center_vertical"
+	    android:gravity="center_vertical"
+	    android:background="@android:color/white"
+	    android:layout_marginTop="20dp"
+	    android:paddingLeft="5dp" 
+	    android:paddingRight="0dp"
+	    android:orientation="vertical" >
+		
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="7dp"
+			android:layout_marginBottom="7dp"
+			android:id="@+id/addcreditlayer"
+			android:orientation="horizontal">
+			<TextView
+				android:id="@+id/addcredit"
+				android:textSize="20sp"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+			    android:scrollHorizontally="true"
+			    android:fadingEdge="horizontal"
+			    android:lines="1"
+			    android:text="@string/add_creditbtn"		    
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:textColor="@color/text_contrast"/>
+			
+		</LinearLayout> 		
+		<View 
+		    android:layout_width="match_parent"
+			android:layout_height="1dp"
+			android:background="@color/gray_color"/>
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="7dp"
+			android:layout_marginBottom="7dp"
+			android:id="@+id/profillayer"
+			android:orientation="horizontal">
+			<TextView
+				android:id="@+id/profil"
+				android:textSize="20sp"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+			    android:scrollHorizontally="true"
+			    android:fadingEdge="horizontal"
+			    android:layout_weight="0.2"
+			    android:lines="1"
+			    android:text="@string/profile_label"		    
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:textColor="@color/text_contrast"/>
+		</LinearLayout>	 				
+		<View 
+		    android:layout_width="match_parent"
+			android:layout_height="1dp"
+			android:background="@color/gray_color"/>		
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="7dp"
+			android:layout_marginBottom="7dp"
+			android:id="@+id/assistancelayer"
+			android:orientation="horizontal">
+			<TextView
+				android:id="@+id/assistance"
+				android:textSize="20sp"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+			    android:scrollHorizontally="true"
+			    android:fadingEdge="horizontal"
+			    android:lines="1"
+			    android:text="@string/contact_us"			    
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:textColor="@color/text_contrast"/>
+			
+		</LinearLayout> 
+		<View 
+		    android:layout_width="match_parent"
+			android:layout_height="1dp"
+			android:background="@color/gray_color"/>
+						
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="7dp"
+			android:layout_marginBottom="7dp"
+			android:id="@+id/faqlayer"
+			android:orientation="horizontal">
+			<TextView
+				android:id="@+id/faq"
+				android:textSize="20sp"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+			    android:scrollHorizontally="true"
+			    android:fadingEdge="horizontal"
+			    android:lines="1"
+			    android:text="FAQ"			    
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:textColor="@color/text_contrast"/>
+			
+		</LinearLayout>		
+	</LinearLayout>			
+</LinearLayout>

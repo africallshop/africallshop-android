@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="history_date_format">d MMM</string>
+	<string name="history_detail_date_format">EEEE MMM d HH:mm</string>
+	<string name="messages_date_format">HH:mm d MMM</string>
+	<string name="today_date_format">HH:mm</string>
+	<string name="picture_name_format">linphone-mms-%s.jpg</string>
+    
+	<string name="app_name">AfriCallShop</string>
+	<string name="applang">en</string>
+	<string name="service_name">AfricallShop Service</string>
+	<string name="addressbook_label">AfricallShop</string>
+	<string name="notification_title">AfricallShop</string>
+	<string name="wait_dialog_text">Starting up</string>
+	<string name="notification_registered">Registered to %s </string> 
+	<string name="notification_register_failure">Fails to register to %s</string>
+	<string name="about_text">AfricallShop %s SIP (rfc 3261) compatible phone under GNU Public License V2</string>
+	<string name="about_link">AfricallShop About</string>
+	
+	<string name="setup_welcome">This assistant will help you to use a SIP account for your calls.</string>
+	<string name="setup_create_account">Create an account on linphone.org</string>
+	<string name="setup_login_linphone">I already have a linphone.org account</string>
+	<string name="setup_login_generic">I already have a SIP account</string>
+	<string name="setup_linphone_account_hint">Enter your linphone.org username and password</string>
+	<string name="setup_general_account_hint">Enter your SIP account username, password and domain</string>
+	
+    <string name="setup_username_hint">username</string>
+
+    <string name="tunnel_host"></string>
+    
+    <!-- Africallshop strings -->
+    
+	    <string name="launcher_text1">International calls and sms at cheap rates</string>
+    <string name="launcher_text2">Sign up and make your first call for free</string>
+    <string name="launcher_text3">Keep in touch with your loved ones</string>
+    <string name="launcher_text4">Save money on your international calls and sms</string>
+    
+    <string name="create_account_text1">Please provide the following information to create an account</string>
+    <string name="create_account_text2">Enter your email</string>
+    <string name="create_account_text3">Enter your password</string>
+    <string name="create_account_text4">Confirm your new password</string>
+    <string name="create_account_text5">Validate</string>
+    <string name="create_account_text6">By using Africallshop you agree to our terms of use</string>
+    <string name="create_account_text7">Create your account</string>
+    
+    
+    <string name="login_text1">Email</string>
+    <string name="login_text2">Password</string>
+    <string name="login_text3">Login</string>
+    <string name="login_text4">Create an account</string>
+    <string name="login_text5">Forgot Password ?</string>
+    
+    <string name="sms_validation_text1">To complete your registration, please confirm your phone number with you country code. For example, add 001 before your phone number if you are living in USA.</string>
+    <string name="sms_validation_text2">Your phone number with country code</string>
+    <string name="sms_validation_text3">Verify</string>
+    <string name="sms_validation_text4">A code will be sent via SMS to verify your phone number</string>
+    
+    
+    <string name="code_validation_text1">A code was sent to you by SMS</string>
+    <string name="code_validation_text2">Your code</string>
+    <string name="code_validation_text3">If you have not received your code, check the number specified in the previous step</string>
+    
+    <string name="usage_terms">https://www.africallshop.com/en/mobile-conditions-utilisations/</string>
+    <string name="faq_url">https://www.africallshop.com/en/faq/</string>
+    
+    	<!-- Errors -->
+	<string name="error_timetout">Timeout</string>
+	<string name="error_sever_not_available">Server not available</string>
+	<string name="error_no_wifi">No connection found</string>
+	<string name="error_failure">Connection Failed</string>
+	<string name="error_bad_field">Field badly filled</string>
+	<string name="task_status_ok"> Success </string>
+	<string name="task_status_ko"> Failled </string>
+	<string name="task_status_unavailable"> Unavailable </string>
+	
+	<string name="error_bad_field_email">The email address you have entrered is invalid. Please enter a valid email address in order to create you account </string>
+	<string name="error_bad_field_password">The password is too short (minimum 6 characters) </string>
+	<string name="error_bad_field_confirm_password">Passwords are different </string>
+	<string name="error_bad_compte_exist">This account already exists </string>
+	
+	<string name="task_status_processing"> Processing ... </string>
+	<string name="task_status_login">  Login ... </string>
+	<string name="launch_login_progressBar">Login! Please wait</string>
+	
+	
+	<string name="ac_subscribe">Open an account</string>
+	<string name="ac_first_name">First name</string>
+	<string name="ac_second_name">Last name</string>
+	<string name="ac_email">Email adresse</string>
+	<string name="ac_confirm_email">Confirm your email adresse</string>
+	<string name="ac_password">Password</string>
+	<string name="ac_confirm_password">Confirm password</string>
+	<string name="ac_phone_number">Phone number</string>
+	<string name="ac_btn_subscribe">Register</string>
+	<string name="ac_ok">Account created on africallshop</string>
+	<string name="ac_existe">Account already exist</string>
+	<string name="launch_acount_progressBar">Registration! Please wait.</string>
+		
+	<string name="add_credit">Buy credit?</string>
+	<string name="add_creditbtn">Add credit</string>
+	<string name="ok">OK</string>
+	<string name="cancel">Cancel</string>
+	<string name="balance">Display credit</string>
+	<string name="balancetext">Your account balance is</string> 
+	
+	<string name="incorrect_phonenumber">incorrect phone number</string>
+	<string name="detail_call">Call</string>
+	<string name="detail_chat">Send a message</string>
+	
+	<string name="date_label">Date</string>
+	<string name="time_label">Duration</string>
+	<string name="cost_label">Call cost</string>
+	<string name="country_label">Country</string>
+	<string name="option_label">Options</string>
+	<string name="connection_label">Logout</string>
+	
+	<string name="email_content_hint">Please write for details.</string>
+	<string name="back_label">Back</string>
+	
+	<string name="assistance_from_header">FILL THE FORM</string>
+	<string name="assistance_email_subjet_hint">Subject</string>
+	<string name="assistance_device_header">YOUR ENVIRONNEMENT</string>
+	
+	<string name="profile_label">Profile</string>
+	<string name="contact_us">Contact us</string>
+	<string name="sendmail_label">Send</string>
+	<string name="save_label">Save</string>
+	
+	<string name="profile_first_name">First Name</string>
+	<string name="profile_last_name">Last Name</string>
+	<string name="profile_zip_code">Zip Code</string>
+	<string name="profile_address">Address</string>
+	<string name="profile_city">City</string>
+	<string name="profile_country">Country</string>
+	<string name="profile_phone_number">Phone number</string>
+	
+	<string name="email_to">To</string>
+	<string name="email_subject">Subject</string> 
+	<string name="error_set_profile">This feature is unavailable in your country</string>
+	
+	<string name="validate_code_phone_ko">You have entered your phone number without your country code. For example, if you are living in USA, add 001 before your phone  number or  The number is already linked to another account. Please enter a valid number</string>
+	<string name="validate_phone_ok">We will send an SMS with your code. Tap OK to continue</string>
+	<string name="validate_code_ok">validated account</string>
+	<string name="validate_code_ko">The code you have entered is incorrect, please enter a valid code</string>
+	<string name="account_disabled">As a security measure, your account has been disabled, thank you to contact technical support support@africallshop.com</string>
+	<string name="error_phonenumber_need_validation">Your account have been registered successfully, Now you need to enter your phone number in order to activate it</string>
+	<string name="verify_now">Verify now</string>
+	
+	<string name="field_validation_error_title">Errors</string>
+	<string name="validation_phone_error_title">Phone number</string>
+	<string name="validation_code_error_title">Code</string>
+	<string name="error_login">Check your password or your email address.</string>
+	<string name="error_login_title">Login failed</string>
+	<string name="verification_error">Verification error(s)</string>
+	
+	<string name="already_running">Process already running</string>
+	<string name="validate_phone_ko">
+	    <![CDATA[
+	    You have entered your phone number without your country code. For example, if you are living in USA, add 001 before your phone  number\n\n or \n\n
+	    The number is already linked to another account. Please enter a valid number.
+	    ]]> </string>
+	<string name="phonenumber_lentgh_ko">The number that you have entered is not valid.</string>
+	
+</resources>
+ 

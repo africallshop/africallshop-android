@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@android:color/white"
+	android:orientation="vertical" >
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:background="@drawable/toolsbar_background">
+		
+		<TextView 
+		    android:id="@+id/cancelbtnass"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:text="@string/cancel"
+		    android:layout_weight="1"
+			android:gravity="center"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:textColor="@drawable/text_switch_button_color"		    
+		    />
+		
+		<TextView
+			android:contentDescription="@string/content_description_linphone_contacts"
+			android:id="@+id/Options"
+			android:text="Feedback"
+			android:gravity="center"
+			android:textSize="20sp"
+			android:textColor="@drawable/text_switch_button_color"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:scaleType="centerCrop"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:adjustViewBounds="true"
+			android:layout_weight="1"/>
+		
+		<TextView 
+		    android:id="@+id/mailformbtn"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:text="Mail"
+		    android:layout_weight="1"
+			android:gravity="center"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:textColor="@color/blue_color"
+		    />
+
+	</LinearLayout>
+	
+	
+	<ListView
+		android:id="@+id/assistanceList"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:divider="@color/gray_color"
+		android:stackFromBottom="false"
+		android:cacheColorHint="@color/transparent"
+		android:footerDividersEnabled="false"
+		android:dividerHeight="0.5dp"/>					
+</LinearLayout>

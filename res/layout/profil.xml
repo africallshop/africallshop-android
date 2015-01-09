@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:background="@drawable/toolsbar_background">
+		
+        <TextView 
+		    android:id="@+id/backbtn"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:layout_weight="1"
+		    android:visibility="visible"
+            android:gravity="center"
+            android:text="@string/back_label"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@drawable/text_switch_button_color"
+		    android:drawableLeft="@drawable/navigation_previous_item"
+		    />
+		
+		<TextView
+			android:contentDescription="@string/content_description_linphone_contacts"
+			android:id="@+id/Options"
+			android:text="@string/profile_label"
+			android:gravity="center"
+			android:textSize="20sp"
+			android:textColor="@drawable/text_switch_button_color"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:scaleType="centerCrop"
+			android:adjustViewBounds="true"
+			android:layout_weight="1"/>
+		
+		<TextView 
+		    android:id="@+id/save"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:text="@string/save_label"
+			android:gravity="center"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:textColor="@color/blue_color"
+		    android:layout_weight="1"
+		    />
+
+	</LinearLayout>
+	
+	<ListView
+		android:id="@+id/profileList"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:divider="@color/gray_color"
+		android:stackFromBottom="false"
+		android:cacheColorHint="@color/transparent"
+		android:footerDividersEnabled="false"
+		android:dividerHeight="0.5dp"/>	
+		
+</LinearLayout>
